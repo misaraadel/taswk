@@ -26,7 +26,7 @@ $(document).ready(function () {
         $('body').toggleClass('overflowNone')
     });
 
-    $('.list-data .icon-contain').click(function(){
+    $('.mobile-lang .icon-contain').click(function(){
         $('.list-contain').addClass('active-list');
     });
 

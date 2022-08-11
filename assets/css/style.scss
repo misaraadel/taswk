@@ -573,7 +573,10 @@
             width: 50%;
             height: 50%;
             object-fit: contain;
-            filter: var(--primary-filter);
+
+            &.filter {
+              filter: var(--primary-filter) !important;
+            }
           }
 
           &:hover {
@@ -585,7 +588,10 @@
 
             img {
               animation: fadeInLeft .4s linear;
-              filter: var(--light-filer);
+
+              &.filter {
+                filter: var(--light-filer);
+              }
             }
           }
         }
@@ -604,7 +610,7 @@
             width: 200px;
             padding: 5px 10px;
             background-color: var(--light-color);
-            box-shadow: 0px 0px 10px rgba($color: #03A8A9, $alpha: 0.2);
+            box-shadow: 0px 0px 10px rgba($color: #4277EE, $alpha: 0.2);
             border-radius: 10px;
             position: relative;
             z-index: 999;
@@ -663,6 +669,10 @@
           }
         }
       }
+    }
+
+    .mobile-lang {
+      display: none;
     }
   }
 }
